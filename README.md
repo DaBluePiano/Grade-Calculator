@@ -1,10 +1,10 @@
-Grade Calculator
+**Grade Calculator**
 
-Overview
+**Overview**
 
 The Grade Calculator is a web application that helps students calculate their current grade based on their exam scores and weights. Additionally, it allows students to determine the score they need on upcoming exams to achieve a desired final grade.
 
-Features
+**Features**
 
 Add Multiple Exams: Easily add as many exam slots as needed to input scores and weights.
 
@@ -18,7 +18,7 @@ Needed Score Calculation: Determine the score needed on remaining exams to achie
 
 Responsive Design: User-friendly design that works across various devices.
 
-Instructions
+**Instructions**
 
 Enter Exam Scores and Weights:
 
@@ -41,7 +41,7 @@ Enter your desired final grade in the "Desired Grade (%)" field.
 
 Click the "Calculate Needed Score" button to find out what score you need on the remaining exams to achieve your desired grade. If the needed score exceeds 100%, the result will indicate that achieving the desired grade is not possible.
 
-Technologies Used
+**Technologies Used**
 
 HTML: Structure of the web application.
 
@@ -56,7 +56,7 @@ styles.css: The CSS file for styling the web application.
 
 script.js: The JavaScript file containing the logic for calculating grades and managing the dynamic elements.
 
-Customization
+**Customization**
 
 Feel free to customize the project to suit your needs. You can:
 
@@ -64,7 +64,7 @@ Modify the styling in styles.css to change the appearance.
 
 Add more features or modify existing functionality in script.js.
 
-License
+**License**
 
 This project is open-source and available under the MIT License. You are free to use, modify, and distribute it as you see fit.
 
