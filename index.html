@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <p>Enter your exam scores and weights to calculate your current grade. You can add more exams if needed. Use the desired grade section to find out what score you need on the remaining exams to achieve your desired grade.</p>
+        <form id="gradeForm">
+            <div id="examSlots">
+                <div class="examSlot">
+                    <label for="exam1Score">Exam 1 Score:</label>
+                    <input type="text" id="exam1Score" class="score" placeholder="e.g. 45/50 or 90%" required>
+                    <label for="weight1">Weight (%):</label>
+                    <input type="number" id="weight1" class="weight" min="0" max="100" required>
+                    <input type="range" id="weight1Slider" class="weightSlider" min="0" max="100" oninput="syncWeightSlider(1)" onchange="syncWeightSlider(1)">
+                </div>
+            </div>
+            <button type="button" onclick="addExamSlot()">Add Another Exam</button>
+            <button type="button" onclick="calculateGrade()">Calculate Grade</button>
+        </form>
+        <div class="desiredGradeSection">
+            <h2>Calculate Needed Score for Desired Grade</h2>
+            <label for="desiredGrade">Desired Grade (%):</label>
+            <input type="number" id="desiredGrade" required>
+            <button type="button" onclick="calculateNeededGrade()">Calculate Needed Score</button>
+        </div>
+        <div id="result"></div>
+        <div id="neededGradeResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
